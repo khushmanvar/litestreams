@@ -1,0 +1,14 @@
+goos: linux
+goarch: amd64
+pkg: https://github.com/khushmanvar/litestreams/benchmark
+cpu: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
+BenchmarkBroker_AppendRecord-8       	14883109	        68.15 ns/op
+BenchmarkBroker_GetRecords-8         	 1000000	      1024 ns/op
+BenchmarkBroker_ChannelIngestion-8   	 5393268	       217.3 ns/op
+BenchmarkLoadConfig_Default-8        	32622258	        36.99 ns/op
+BenchmarkLoadConfig_EnvOverride-8    	25494633	        46.57 ns/op
+BenchmarkProcessor_Process-8         	22775946	        50.00 ns/op
+BenchmarkProcessor_ProcessWindow-8   	     913	   1803179 ns/op
+BenchmarkRecord_Metadata-8           	36200748	        33.23 ns/op
+PASS
+ok  	https://github.com/khushmanvar/litestreams/benchmark	11.956s
